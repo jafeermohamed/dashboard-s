@@ -1,0 +1,198 @@
+```css
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 10%;
+    background: #111c33;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 30px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    color: #cbd5e1;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #38bdf8;
+    color: #0f172a;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Profile */
+.profile {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: #1e293b;
+    border: 5px solid #38bdf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+}
+
+/* Common Sections */
+section {
+    padding: 80px 10%;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.title span {
+    color: #38bdf8;
+}
+
+/* About */
+.about p {
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+/* Skills and Projects */
+.skills-container,
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #263850;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #cbd5e1;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #cbd5e1;
+    margin: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111c33;
+    color: #94a3b8;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+
+    nav {
+        padding: 20px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .profile {
+        width: 200px;
+        height: 200px;
+    }
+}
+```
